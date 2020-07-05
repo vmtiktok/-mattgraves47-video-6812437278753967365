@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
         <head>
-	<link rel="shortcut icon" href="favicon.ico?">
+	<link rel="shortcut icon"  href="favicon.ico">
    
   <body>
 	
@@ -9,10 +9,13 @@
 		
       function play() {
         var audio = document.getElementById("audio");
-        audio.play();
+        
+	setTimeout(function() {
+	audio.play();
 	document.getElementById("img").style.display = "none"; 
 	document.getElementById("img2").style.display = "none";
-	document.getElementById("anne").style.display = "block"; 
+	document.getElementById("anne").style.display = "block"; }, 1000);
+	
       }
     </script>
 
